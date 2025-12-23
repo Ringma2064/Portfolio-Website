@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ringma Tamang - Frontend Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="profile-nav">
+            <a href="index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Back to Team
+            </a>
+            <h1 class="profile-title">Team Member Profile</h1>
+        </nav>
+
+        <div class="profile-container">
+            <div class="profile-header">
+                <div class="profile-image-large">
+                    <img src="images/ringma.jpg" alt="Ringma Tamang">
+                </div>
+                <div class="profile-info">
+                    <h1>Ringma Tamang</h1>
+                    <p class="profile-role">Frontend Developer</p>
+                    <p class="profile-tagline">Creating responsive, performant, and accessible web applications</p>
+                    
+                    <div class="profile-contact">
+                        <p><i class="fas fa-envelope"></i> tamangringma13@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +977 9746994613</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Okhaldhunga, Nepal</p>
+                    </div>
+
+                    <div class="profile-social">
+                        <a href="https://github.com/Ringma2064" class="social-btn">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://www.instagram.com/ringmatamang_013/" class="social-btn">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-content">
+                <div class="content-section">
+                    <h2><i class="fas fa-user"></i> About Me</h2>
+                    <p>I am a passionate Frontend Developer with expertise in creating responsive and accessible web applications. I specialize in HTML, CSS, JavaScript, and modern frameworks.</p>
+                    <p>My goal is to create user-friendly interfaces that provide excellent user experiences across all devices and platforms.</p>
+                </div>
+
+                <div class="content-section">
+                    <h2><i class="fas fa-briefcase"></i> Experience</h2>
+                    <div class="experience-item">
+                        <h3>Frontend Developer - Portfolio Website.</h3>
+                        <p class="experience-date">2025 - Present</p>
+                        <p>Developing responsive web applications using modern HTML, CSS, JavaScript.</p>
+                    </div>
+                    <div class="experience-item">
+                        <h3>Web Developer Intern - Digital Creations</h3>
+                        <p class="experience-date">2020 - 2021</p>
+                        <p>Assisted in developing client websites and maintaining existing web applications.</p>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h2><i class="fas fa-code"></i> Skills</h2>
+                    <div class="skills-container">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Responsive Design</span>
+                        <span class="skill-tag">Web Performance</span>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+                    <div class="education-item">
+                        <h3>Diploma in Computer Engineering.</h3>
+                        <p class="education-date">2022 - 2026</p>
+                        <p>Chautara Secondary School, Dandakharka, Okhaldhunga</p>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+                    <form action="https://formspree.io/f/mqavdbel" method="POST">
+                        <label>
+                         <input type="email" placeholder="Your Email" name="email"
+                            style="width:100%; padding:15px; margin-bottom:15px; 
+                            background:#263241; border:1px solid #4562d0; 
+                            color:white; border-radius:10px; font-size:16px;">
+                        </label>
+                        <label>
+                        <label>
+                         <input type="message" placeholder="Your Message" name="message"
+                            style="width:100%; padding:15px; margin-bottom:15px; 
+                            background:#263241; border:1px solid #4562d0; 
+                            color:white; border-radius:10px; font-size:16px;">
+                        </label>
+                            <button 
+                             style="
+                                width:100%; padding:18px; 
+                                background: linear-gradient(to right, #5a60ff, #8a90ff); 
+                                border:none; border-radius:12px; 
+                                color:white; font-size:18px; cursor:pointer;
+                                ">
+                                Send Message
+                            </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; Ringma Tamang Portfolio</p>
+                <a href="index.html" class="home-link">← Back to Team Page</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('ringma-contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Thank you for your message! Ringma will get back to you soon.');
+                    this.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
